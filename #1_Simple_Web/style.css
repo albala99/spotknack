@@ -9,7 +9,8 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url("/24.jpg") ;
+    /* background-image: url("/24.jpg") ; */
+    background-image: linear-gradient(135deg, #004b7e, #0083a1, #00ba86, #12eb23);
 }
 
 nav{
@@ -97,8 +98,8 @@ nav{
 }
 .controls{
     position: absolute;
-    right: 10%;
-    top: 50%;
+    right: 35%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: center;
 }
