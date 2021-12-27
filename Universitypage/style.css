@@ -19,6 +19,10 @@ nav{
 }
 nav img{
     width: 100px;
+    transition: transform 1s ;
+}
+nav img:hover {
+    transform: scale(1.5);
 }
 .nav-links{
     flex: 1;
@@ -36,6 +40,11 @@ nav img{
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
+.nav-links ul li:hover{
+    transform: scale(1.5);
+    color: orange;
+}
+
 .textbox{
     width:100%;
     color: #fff;
@@ -131,3 +140,39 @@ h3{
     font-weight: 600;
 
 }
+.chat img{
+    width: 40px;
+}
+.chat {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 183, 27);
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    font-size: 50px;
+    text-align: center;
+    line-height: 75px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    animation: jelly 1s infinite;
+ }
+  
+ .chat:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+ }
+
+
+ @keyframes jelly {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
