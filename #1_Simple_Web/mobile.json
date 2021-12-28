@@ -1,0 +1,70 @@
+[
+    {
+        "id": "1",
+        "model":"oneplus 9pro",
+        "image":"/images/oneplus9pro.png",
+        "price":"60000"
+    },
+    {
+        "id": "2",
+        "model":"oneplus 9",
+        "image":"/images/oneplus9.png",
+        "price":"50000"
+    },
+    {
+        "id": "3",
+        "model":"oneplus 9r",
+        "image":"/images/oneplus9r.png",
+        "price":"40000"
+    },
+    {
+        "id": "4",
+        "model":"oneplus nord",
+        "image":"/images/oneplusnord.png",
+        "price":"20000"
+    },
+    {
+        "model":"oneplus 6",
+        "image":"/images/oneplus-6.png",
+        "price":"20000"
+    },
+    {
+        "model":"oneplus 7t",
+        "image":"/images/oneplus7t.png",
+        "price":"20000"
+    },
+    {
+        "id": "1",
+        "model":"oneplus 9pro",
+        "image":"/images/oneplus9pro.png",
+        "price":"60000"
+    },
+    {
+        "id": "2",
+        "model":"oneplus 9",
+        "image":"/images/oneplus9.png",
+        "price":"50000"
+    },
+    {
+        "id": "3",
+        "model":"oneplus 9r",
+        "image":"/images/oneplus9r.png",
+        "price":"40000"
+    },
+    {
+        "id": "4",
+        "model":"oneplus nord",
+        "image":"/images/oneplusnord.png",
+        "price":"20000"
+    },
+    {
+        "model":"oneplus 6",
+        "image":"/images/oneplus-6.png",
+        "price":"20000"
+    },
+    {
+        "model":"oneplus 7t",
+        "image":"/images/oneplus7t.png",
+        "price":"20000"
+    }
+]

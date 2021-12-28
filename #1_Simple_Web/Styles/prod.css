@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+body{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    
+}
+nav{
+    width: 90%;
+    position:sticky;
+    z-index: 1;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 200px;
+}
+.redirect-links{
+    flex: 1;
+    text-align: right;
+}
+.redirect-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.redirect-links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight:bolder ;
+}
+#left-box{
+    width: 20%;
+    background-color: cyan;
+    float: left;
+    height: 100vh;
+}
+/* .container{
+    width: 80%;
+    height: 100vh;
+    float: right;
+    font-family: sans-serif;
+} */
+img{
+    display: block;
+    width: 100px;
+}
+/* Products */
+.products{
+    padding: 1rem;
+}
+.products h2{
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.product-item{
+    margin: 1rem 0;
+}
+/* .product-img{
+    background: var(--ghost-white);
+    padding: 3rem 0;
+    overflow: hidden;
+    position: relative;
+} */
+.product-img img{
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    width: 200px;
+    margin: 0 auto;
+}
+.product-img:hover img{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 5px 0;
+    text-align: center;
+}
+.product-name{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.product-price{
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+
+
+
+/* MediaQuery */
+@media screen and (min-width: 680px){
+    .product-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .product-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .product-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
