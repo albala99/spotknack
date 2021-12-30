@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Styles/prod.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,8 +24,39 @@
                     <li><a href="">Accessories</a></li>
                     <li><a href="/login.html">Login</a></li>
                 </ul>
-            </div>
-        </nav>
+            </div> 
+        
+
+        <!--<<<<<<<<<< Cart>>>>>>>>>>>>>>>>>>>>>>>>> -->
+            <div class = "cart">
+                <button type = "button" id = "cart-btn">
+                  <i class = "fas fa-shopping-cart"></i>
+                  <span id = "cart-count-info">0</span>
+                </button>
+                
+                <div class = "cart-container">
+                  <div class = "cart-list">
+                    <!-- single item -->
+                    <!-- <div class = "cart-item">
+                      <img src = "/images/oneplus-6.png" alt = "product image">
+                      <div class = "cart-item-info">
+                        <h3 class = "cart-item-name">Oneplus</h3>
+                        <span class = "cart-item-price">Rs.</span>
+                      </div>
+                      <button type = "button" class = "cart-item-del-btn">
+                        <i class = "fas fa-times"></i>
+                      </button>
+                    </div>  -->
+                    <!-- end of single item  --> 
+                  </div>
+
+                  <div class = "cart-total">
+                    <h3>Total: Rs.</h3>
+                    <span id = "cart-total-value"></span>
+                  </div>
+                </div>
+              </div>
+            </nav>
         <!-- <div id="left-box" style="width: 20%; float:left">
             #left content
          </div> -->
@@ -39,8 +71,8 @@
             <h2>Our Products</h2>
             <div class = "product-list">
                 <!-- single item -->
-                <div class = "product-item">
-                    <!-- <div class = "product-img">
+                <!--<div class = "product-item">
+                     <div class = "product-img">
                         <img src = "/images/mobile.png" alt = "product image">
                         <button type = "button" class = "add-to-cart-btn">
                         <i class = "fas fa-shopping-cart"></i>Add To Cart
