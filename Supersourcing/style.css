@@ -10,6 +10,9 @@ body{
 header{
     width: 100%;
     padding: 14px 0;
+    position:fixed;
+    background-color: #fff;
+    z-index: 999;
     
 }
 nav{
@@ -38,10 +41,10 @@ nav{
 }
 .arrow-icon {
     position: relative;
- width: 13px;
- top: 3px;
- margin: 0 10px;
- opacity: .8;
+    width: 13px;
+    top: 3px;
+    margin: 0 10px;
+    opacity: .8;
 }
 .dropdown-menu{
     position: absolute;
@@ -101,7 +104,7 @@ nav{
     text-align: center;
 }
 .banner-center{
-    padding: 0 220px;
+    padding: 0 140px;
 }
 .heading-h5 {
     font-weight: 600;
@@ -152,7 +155,7 @@ h3{
     font-weight: 400;
     color: #1c2833;
     line-height: 34px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .customer-highlights > p {
     padding-top: 130px;
@@ -169,11 +172,90 @@ h3{
 .award-image ul li{
     margin: 25px;
 }
+/* Table */
 
+.content-table tr th {
+    font-size: 20px;
+    font-weight: 700;
+    width: 33.33%;
+    padding: 13px 15px;
+}
+.content-table tr td:nth-child(2) p:before {
+    content: url(/icons/old-way.svg);
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.content-table tr td:nth-child(3) p:before {
+    content: url(/icons/supercourcing-icon.svg);
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+tbody, td, tfoot, th, thead, tr {
+    border: 0 solid;
+    border-color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
 
-
-
-
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align:left;
+}
+.content-table tr td:first-child, .content-table tr th:first-child {
+    position: sticky;
+    left: 0;
+    background: #fff;
+    border-right: none;
+    z-index: 9;
+}
+.content-table tr td , .content-table tr th {
+    color: #1c2833;
+    line-height: 26px;
+    background: #f3f4f8;
+    border-right: 18px solid #fff;
+    text-align: left;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.content-table tr td {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 17px 15px;
+    vertical-align: top;
+}
+.content-table tr td p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-left: 26px;
+    font-size: 16px;
+    position: relative;
+    margin: 8px 0 0;
+    text-align: justify;
+}
+.content-table tr td:nth-child(3) p span {
+    color: #0096e3;
+    font-weight: 600;
+}
+.content-table tr td:nth-child(2) p span {
+    color: #e25241;
+    font-weight: 600;
+}
 
 /* <<<<<<<<<<<  Media Queries >>>>>>>>>>>> */
   /* Response after 1392px */
