@@ -510,6 +510,9 @@ nav{
     .menus{
     display: none;
 }
+.col-lg-3 {
+    width: 100%;
+}
 
 }
   /* Response after 768px */
@@ -576,6 +579,7 @@ nav{
     }
     .col-lg-9{
         left: 0px;
+        width: 100%;
     }
     .mt-5{
         padding: 0;
