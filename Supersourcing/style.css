@@ -15,16 +15,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: progress;
   z-index: 20;
-  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+  background-color: rgba(40, 40, 40, 0.8);
 }
 .loader .ball-scale-multiple{
-   position: relative
-   ;
+   position: relative;
 }
 .loader .ball-item{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border: 8px solid #0096e3;
     position: absolute;
     top: 0px;
@@ -95,24 +95,7 @@ nav{
     margin: 0 10px;
     opacity: .8;
 }
-.dropdown-menu{
-    position: absolute;
-    top: 60px;
-    left: 20%;
-    /* display: block; */
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: .75rem;
-    box-shadow:0 2px 30px rgb(28 40 51 / 10%);
-    -webkit-border-radius: 12px;
-    padding: 10px;
-    /* opacity:0; */
-    display: none;
-    width: 800px;
-    height: 500px;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
-}
+
 .login-links ul li{
     list-style: none;
     display: inline-block;
@@ -173,17 +156,18 @@ nav{
     height: 60px;
     padding: 20px;
     margin: 0 auto;
-    background-color: #0096e3;
+    background-color: #00a8ff;
     border-radius: 8px;
 }
 .post-selection-btn:hover{
-    opacity: .9;
+    background-color: #0096e3;
     transition: .2s;
 }
 .post-selection-btn a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 18px;
+    font-weight: 600;
 }
 .post-selection-btn a img{
     position: relative;
@@ -541,7 +525,36 @@ footer{
     position: absolute;
     right: 50px;
 }
+/* chat bubble */
+.chat svg{
+    width: 28px;
+    height: 32px;
+    position: relative;
+    bottom: 6px ;
+}
+.chat svg path {
+    fill: rgb(255, 255, 255);
+}
+.chat {
+  width: 60px;
+  height: 60px;
+  background-color: #0071b2;;
+  border-radius: 50%;
+  box-shadow: 1px 6px 10px 0 rgb(0 0 0 / 6%),0 2px 32px 0 rgb(0 0 0 / 16%);
+  transition: all 0.1s ease-in-out;
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+  line-height: 75px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+}
 
+.chat:hover {
+  transform: scale(1.05);
+}
 
 /* <<<<<<<<<<<  Media Queries >>>>>>>>>>>> */
   /* Response after 1392px */
@@ -649,6 +662,16 @@ nav{
         position: relative;
         right: 0px;
         left: 30px;
+    }
+    .chat {
+        width: 50px;
+        height: 50px;
+    }
+    .chat svg{
+        width: 25px;
+        height: 28px;
+        position: relative;
+        bottom: 13px ;
     }
   }
   

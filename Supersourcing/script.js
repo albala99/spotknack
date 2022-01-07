@@ -17,6 +17,7 @@ function myFunction() {
 }
 function showPage() {
   document.querySelector(".loader").style.display = "none";
+  document.querySelector(".loading-content").style.display = "block";
 }
 //end loading animation timeout
 function fetchjson(){
