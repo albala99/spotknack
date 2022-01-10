@@ -1,0 +1,12 @@
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        var settings = {
+"url": "/Tweets",
+"method": "GET",
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});
+
+   

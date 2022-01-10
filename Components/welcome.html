@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Welcome Page</h1>
+    <div id="twitter"></div>
+    <script>
+        const tweet=document.getElementById("twitter");
+        let html='';
+        fetch("/Tweets").then(response=>response.json()).then(data=>{
+            console.log(data.data);
+            data.data.forEach(element => {
+                html+=`<h3 class = "product-name">${element.id}</h3>
+                <h3 class = "product-name">${element.text}</h3>
+                <h3 class = "product-name">${element.author_id}</h3>
+                <p class = "product-name">${element.created_at}</p>`;
+                console.log(element.id);
+            console.log(element.text);
+        });
+        tweet.innerHTML=html;
+        })
+    </script>
+</body>
+</html>

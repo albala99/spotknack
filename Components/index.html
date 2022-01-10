@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Styles/style.css">
     <a href="https://icons8.com/icon/85701/chat"></a>
     <title>Component</title>
 </head>
 <body>
+  
     <div class="container">
+      <form action="welcome.html" onsubmit=" return validate() ">
         <div class="input-field">
-            <input type="email" placeholder="Email" autocomplete="nope">
+            <input type="text" placeholder="Username" id="uname" autocomplete="nope">
           </div>
           <div class="input-field">
-            <input type="password" placeholder="Password" autocomplete="new-password">
+            <input type="password" placeholder="Password" id="pass" autocomplete="new-password">
         </div>
-        <button class="button" role="button"><span class="text">Button</span></button>
-
+        <button class="button" role="button"><span class="text">Submit</span></button>
+      </form>
     <div class="row1">
             <label>
               <input type="checkbox" class="option-input checkbox" checked />
@@ -55,8 +57,7 @@
             </select>
         </div>
     </div>
-    
     <div class="chat"><img src="https://img.icons8.com/material-outlined/24/000000/chat--v1.png"/> </div>
-
+    <script src="/javascript/script.js" ></script>
 </body>
 </html>
