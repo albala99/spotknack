@@ -11,9 +11,9 @@ async function getRequest() {
     // specify Tweet IDs to fetch, and any additional fields that are required
     // by default, only the Tweet ID and text are returned
     const params = {
-        "ids": "1476896453008277504,1470204526024089607", // Edit Tweet IDs to look up
+        "ids": "1476896453008277504,1470204526024089607,1482004670084415489,1482537238303068167", // Edit Tweet IDs to look up
         "tweet.fields": "created_at,attachments", // Edit optional query parameters here
-        "expansions": "author_id" // Edit optional query parameters here
+        "expansions": "author_id", // Edit optional query parameters here
     }
 
     // this is the HTTP header that adds bearer token authentication
@@ -28,9 +28,9 @@ async function getRequest() {
     //     console.log(data);
     // })
     if (res.body) {
-        // console.log(res.body.data);
+        console.log(res.body.data);
         res.body.data.forEach(element => {
-            console.log(element.text);
+            console.log(element);
         });
         return res.body;
     } else {
