@@ -505,7 +505,7 @@ img{
     top: 40%;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: 30px;
+    bottom: -2.5rem;
 }
 .swiper-pagination-bullets-active{
     background-color: var(--first-color);
@@ -688,9 +688,6 @@ img{
         grid-template-columns: .6fr;
         justify-content:center ;
     }
-    .swiper-container-horizontal > .swiper-pagination-bullets{
-        bottom: 200px;
-    }
 }
 @media screen and (min-width:768px) {
     .container{
@@ -825,9 +822,9 @@ img{
     .swiper-button-next{
         right: -3.5rem;
     }
-    /* .swiper-container-horizontal> .swiper-pagination-bullets{
-        
-    } */
+    .swiper-container-horizontal> .swiper-pagination-bullets{
+        bottom: -4.5rem;
+    }
     .contact_form{
         width: 460px;
     }
