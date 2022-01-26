@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- icons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
     <!-- Swiper css -->
     <link rel="stylesheet" href="/Data/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/Data/css/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Bala Alagappan</title>
+
 </head>
 <body>
     <!-- Header -->
@@ -90,7 +92,7 @@
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home_blob-img" href="/Data/image/bgremoved.png"/>
+                                <image class="home_blob-img" loading="lazy" href="/Data/image/bgremoved.png"/>
                             </g>
                         </svg> 
                     </div>
@@ -116,7 +118,7 @@
         <h2 class="section_title">About Me</h2>
         <span class="section_subtitle">My Introduction</span>
         <div class="about_container container grid">
-            <img src="/Data/image/IMG_20200202_144500-01.jpeg" class="about_img" alt="iamge">
+            <img src="/Data/image/IMG_20200202_144500-01.jpeg" loading="lazy" class="about_img" alt="iamge">
             <div class="about_data">
                 <p class="about_description">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
                 <div class="about_info">
@@ -326,28 +328,30 @@
                     </div>
                 </div>
             </div>
-            <form action="" class="contact_form grid">
+            <form 
+            method="POST" id="my-form"
+            action="https://script.google.com/macros/s/AKfycbx-_gxylG5MQ8IR3E4qe4cMhHa21nGjzgJHsHYsui44FAMXVUg3fLgKvVYBFD5c2NWV/exec" class="contact_form grid">
                 <div class="contact_inputs grid">
                     <div class="contact_content">
                         <label for="" class="contact_label">Name</label>
-                        <input type="text" class="contact_input">
+                        <input name="Name" type="text" class="contact_input">
                     </div>
                     <div class="contact_content">
                         <label for="" class="contact_label">Email</label>
-                        <input type="email" class="contact_input">
+                        <input name="Email" type="email" class="contact_input">
                     </div>
                 </div>
                 <div class="contact_content">
                     <label for="" class="contact_label">Project</label>
-                    <input type="text" class="contact_input">
+                    <input name="Project" type="text" class="contact_input">
                 </div>
                 <div class="contact_content">
                     <label for="" class="contact_label">Message</label>
-                    <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    <textarea name="Message" id="" cols="0" rows="7" class="contact_input"></textarea>
                 </div>
                 <div>
-                    <a href="#" class="button button--flex">
-                        Send Message<i class="uil uil-message button_icon"></i>
+                    <a href="#" >
+                        <button  type="submit" class="button button--flex">Send Message<i class="uil uil-message button_icon"></i></button>
                     </a>
                 </div>
             </form>

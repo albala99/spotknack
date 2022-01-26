@@ -306,6 +306,9 @@ img{
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    border-style: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 .button:hover{
     background-color: var(--first-color-alt);
