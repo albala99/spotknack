@@ -1,26 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Board, {moveCard} from "@lourenci/react-kanban";
+import "@lourenci/react-kanban/dist/styles.css";
+import './index.css';
 
-function App() {
-  return (
-    <h1>Welcome you</h1>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+const initialboard= {
+  columns:[
+  {
+    id:1,
+    title:"Todo",
+    cards:[
+      {
+        id:1,
+        title:"Host",
+        description:"host all webites"
+      },
+      {
+        id:2,
+        title:"Git",
+        description:"push to git"
+      },
+    ]
+  },
+  {
+    id:2,
+    title:"Done",
+    cards:[
+      {
+        id:1,
+        title:"Learning",
+        description:"Basics of web"
+      }
+    ]
+  }
+]
+};
+
+function MyBoard(){
+  const [board,setBoard] =useState(initialboard);
+
+  function onCardMove(card,source,destination) {
+    const updatedBoard=moveCard(board,source,destination);
+    setBoard(updatedBoard);
+  }
+  return(
+    <Board
+    onCardDragEnd={onCardMove} 
+    disableColumnDrag
+    >{board}</Board>
+    
+  )
 }
 
-export default App;
+
+export default MyBoard
